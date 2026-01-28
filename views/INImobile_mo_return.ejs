@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>KG이니시스 결제샘플</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+
+  <body class="wrap">
+    <!-- 본문 -->
+    <main class="col-8 cont" id="bill-01">
+      <!-- 페이지타이틀 -->
+      <section class="mb-5">
+        <div class="tit">
+          <h2>일반결제</h2>
+          <p>
+            KG이니시스 결제창을 호출하여 다양한 지불수단으로 안전한 결제를
+            제공하는 서비스
+          </p>
+        </div>
+      </section>
+      <!-- //페이지타이틀 -->
+
+      <!-- 카드CONTENTS -->
+      <section class="menu_cont mb-5">
+        <div class="card">
+          <div class="card_tit">
+            <h3>모바일 일반결제</h3>
+          </div>
+
+          <form name="" id="result" method="post" class="mt-5">
+            <div
+              class="row g-3 justify-content-between"
+              style="--bs-gutter-x: 0rem"
+            >
+              <label
+                class="col-10 col-sm-2 gap-2 input param"
+                style="border: none"
+                >P_STATUS</label
+              >
+              <label class="col-10 col-sm-9 reinput"> <%= P_STATUS %> </label>
+
+              <label class="col-10 col-sm-2 input param" style="border: none"
+                >P_RMESG1</label
+              >
+              <label class="col-10 col-sm-9 reinput"> <%= P_RMESG1 %> </label>
+
+              <label class="col-10 col-sm-2 input param" style="border: none"
+                >P_TID</label
+              >
+              <label class="col-10 col-sm-9 reinput">
+                <%= typeof P_TID === 'undefined' || P_TID == null ? 'null' :
+                P_TID %>
+              </label>
+
+              <label class="col-10 col-sm-2 input param" style="border: none"
+                >P_TYPE</label
+              >
+              <label class="col-10 col-sm-9 reinput">
+                <%= typeof P_TYPE === 'undefined' || P_TYPE == null ? 'null' :
+                P_TYPE %>
+              </label>
+
+              <label class="col-10 col-sm-2 input param" style="border: none"
+                >P_OID</label
+              >
+              <label class="col-10 col-sm-9 reinput">
+                <%= typeof P_OID === 'undefined' || P_OID == null ? 'null' :
+                P_OID %>
+              </label>
+
+              <label class="col-10 col-sm-2 input param" style="border: none"
+                >P_AMT</label
+              >
+              <label class="col-10 col-sm-9 reinput">
+                <%= typeof P_AMT === 'undefined' || P_AMT == null ? 'null' :
+                P_AMT %>
+              </label>
+
+              <label class="col-10 col-sm-2 input param" style="border: none"
+                >P_AUTH_DT</label
+              >
+              <label class="col-10 col-sm-9 reinput">
+                <%= typeof P_AUTH_DT === 'undefined' || P_AUTH_DT == null ?
+                'null' : P_AUTH_DT %>
+              </label>
+
+              <label class="col-10 col-sm-2 input param" style="border: none"
+                >P_VACT_NUM</label
+              >
+              <label class="col-10 col-sm-9 reinput">
+                <%= typeof P_VACT_NUM === 'undefined' || P_VACT_NUM == null ?
+                'null' : P_VACT_NUM %>
+              </label>
+            </div>
+          </form>
+
+          <button
+            onclick="location.href = 'https://[가맹점도메인]/'"
+            class="btn_solid_pri col-6 mx-auto btn_lg"
+            style="margin-top: 50px"
+          >
+            돌아가기
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

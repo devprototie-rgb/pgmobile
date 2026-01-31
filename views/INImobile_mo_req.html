@@ -66,7 +66,7 @@
                 >P_INI_PAYMENT</label
               >
               <label class="col-10 col-sm-9 input">
-                <input type="text" name="P_INI_PAYMENT" value="CARD" />
+                <input type="text" name="P_INI_PAYMENT" value="<%= P_INI_PAYMENT %>" />
               </label>
 
               <label class="col-10 col-sm-2 input param" style="border: none"
@@ -87,49 +87,49 @@
                 >P_AMT</label
               >
               <label class="col-10 col-sm-9 input">
-                <input type="text" name="P_AMT" value="<%= P_AMT%>" />
+                <input type="text" name="P_AMT" value="<%= P_AMT %>" />
               </label>
 
               <label class="col-10 col-sm-2 input param" style="border: none"
                 >P_GOODS</label
               >
               <label class="col-10 col-sm-9 input">
-                <input type="text" name="P_GOODS" value="테스트상품" />
+                <input type="text" name="P_GOODS" value="<%= P_GOODS %>" />
               </label>
 
               <label class="col-10 col-sm-2 input param" style="border: none"
                 >P_UMANE</label
               >
               <label class="col-10 col-sm-9 input">
-                <input type="text" name="P_UMANE" value="테스터" />
+                <input type="text" name="P_UMANE" value="<%= P_UNAME %>" />
               </label>
 
               <label class="col-10 col-sm-2 input param" style="border: none"
                 >P_MOBILE</label
               >
               <label class="col-10 col-sm-9 input">
-                <input type="text" name="P_MOBILE" value="01012345678" />
+                <input type="text" name="P_MOBILE" value="<%= P_MOBILE %>" />
               </label>
 
               <label class="col-10 col-sm-2 input param" style="border: none"
                 >P_EMAIL</label
               >
               <label class="col-10 col-sm-9 input">
-                <input type="text" name="P_EMAIL" value="test@test.com" />
+                <input type="text" name="P_EMAIL" value="<%= P_EMAIL %>" />
               </label>
 
-              <input type="text" name="P_NEXT_URL" value="<%=P_NEXT_URL%>" />
+              <input type="hidden" name="P_NEXT_URL" value="<%= P_NEXT_URL %>" />
 
               <input type="hidden" name="P_CHARSET" value="utf8" />
 
               <input
                 type="hidden"
                 name="P_TIMESTAMP"
-                value="<%=P_TIMESTAMP%>"
+                value="<%= P_TIMESTAMP %>"
               />
-              <input type="hidden" name="P_CHKFAKE" value="<%=P_CHKFAKE%>" />
+              <input type="hidden" name="P_CHKFAKE" value="<%= P_CHKFAKE %>" />
 
-              <input type="hidden" name="P_NOTI" value="<%= P_OID %>" />
+              <input type="hidden" name="P_NOTI" value="<%= P_NOTI %>" />
 
               <label class="col-10 col-sm-2 input param" style="border: none"
                 >P_RESERVED</label
@@ -140,12 +140,6 @@
                   name="P_RESERVED"
                   value="below1000=Y&vbank_receipt=Y&centerCd=Y&amt_hash=Y&noeasypay=Y&global_visa3d=Y"
                 />
-              </label>
-              <label class="col-10 col-sm-2 input param" style="border: none"
-                >P_NOTI</label
-              >
-              <label class="col-10 col-sm-9 input">
-                <input type="text" name="P_NOTI" value="goodsId=1234567890" />
               </label>
               <label class="col-10 col-sm-2 input param" style="border: none"
                 >TYPE</label
